@@ -10,10 +10,12 @@ export default new Router()
   .match('/', shoppingFlowRouteHandler)
 
   // PLP page
-  .match('/collections/:path*', shoppingFlowRouteHandler)
+  .match('/watches/:path*', shoppingFlowRouteHandler)
 
   // PDP page
-  .match('/products/:path*', shoppingFlowRouteHandler)
+  .match('/shop/:path*', shoppingFlowRouteHandler)
+
+
 
   // example route for cacheable assets:
   .match('/images/:path*', ({ cache, proxy }) => {
