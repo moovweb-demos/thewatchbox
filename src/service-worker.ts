@@ -15,7 +15,7 @@ new Prefetcher({
         as: 'image',
       },
       {
-        selector: '.product-thumbnails-wrapper img',
+        selector: '.primary-images .carousel-item.active img.img-fluid',
         maxMatches: 2,
         attribute: 'data-src',
         as: 'image',

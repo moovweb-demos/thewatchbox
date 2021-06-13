@@ -24,8 +24,6 @@ export default function transform(response: Response, request: Request) {
       $(el).attr('href', link.replace('https://www.thewatchbox.com/', '/'));
     })
 
-    $('*').attr('layer0', 'layer0');
-
     // Fixing CORS image issues by proxing images to Layer0 server
     $('img[data-src]').map((i, el) => {
       var url = $(el).attr('data-src') || '';
